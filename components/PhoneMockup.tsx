@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface PhoneMockupProps {
   children?: React.ReactNode;
   className?: string;
@@ -5,19 +7,20 @@ interface PhoneMockupProps {
 
 export default function PhoneMockup({ children, className = "" }: PhoneMockupProps) {
   return (
-    <div className={`relative mx-auto ${className}`} style={{ width: 280, height: 560 }}>
-      {/* Phone frame */}
-      <div className="absolute inset-0 rounded-[3rem] border-2 border-black/10 bg-[#111116] overflow-hidden shadow-[0_0_60px_rgba(123,91,253,0.10)]">
-        {/* Notch */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-28 h-7 bg-black rounded-b-2xl z-10" />
-
-        {/* Screen content */}
-        <div className="absolute inset-3 top-8 rounded-[2.2rem] overflow-hidden">
-          {children || (
-            <div className="w-full h-full bg-gradient-to-br from-primary/30 via-primary/10 to-transparent" />
-          )}
-        </div>
+    <div className={`relative mx-auto ${className}`} style={{ width: 280, height: 570 }}>
+      {/* Content behind the frame */}
+      <div className="absolute inset-[4.3%] top-[2.3%] bottom-[2.3%] rounded-[1.8rem] overflow-hidden">
+        {children || (
+          <div className="w-full h-full bg-gray-100" />
+        )}
       </div>
+      {/* iPhone frame overlay */}
+      <Image
+        src="/images/iphone-frame.png"
+        alt=""
+        fill
+        className="object-contain pointer-events-none z-10"
+      />
     </div>
   );
 }
