@@ -10,17 +10,17 @@ const steps = [
   },
   {
     number: "02",
-    icon: "🧭",
+    icon: "🤝",
     title: "Get Paired",
     description:
-      "We match you with someone nearby. Follow the compass to find each other.",
+      "Match with someone nearby and meet up in person.",
   },
   {
     number: "03",
     icon: "💬",
     title: "Make a Friend",
     description:
-      "Break the ice with conversation starters, then stay connected.",
+      "Exchange names and add each other as friends.",
   },
 ];
 

@@ -1,10 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms of Service" },
+  { href: "/community-guidelines", label: "Community Guidelines" },
   { href: "/support", label: "Support" },
-  { href: "/safety", label: "Safety Guidelines" },
+  { href: "/safety", label: "Safety" },
 ];
 
 export default function Footer() {
@@ -12,11 +14,20 @@ export default function Footer() {
     <footer className="border-t border-border py-12">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="text-center md:text-left">
-            <p className="text-lg font-bold mb-1">Closer</p>
-            <p className="text-muted text-sm">
-              Meet the people around you.
-            </p>
+          <div className="flex items-center gap-2.5">
+            <Image
+              src="/logo-white.png"
+              alt="Closer"
+              width={28}
+              height={16}
+              className="h-4 w-auto"
+            />
+            <div>
+              <p className="text-lg font-bold leading-tight">Closer</p>
+              <p className="text-muted text-xs">
+                Made for the moments that matter.
+              </p>
+            </div>
           </div>
 
           <div className="flex flex-wrap justify-center gap-6">

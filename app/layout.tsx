@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Closer — Meet the people around you",
+  title: "Closer — Made for the moments that matter",
   description:
-    "Closer is like Pokemon GO for making friends on campus. Go live, get paired with someone nearby, and meet in minutes — not days.",
+    "Closer helps university students meet friends in person. Go live on the campus map, get paired with someone nearby, and meet face-to-face in minutes.",
   openGraph: {
-    title: "Closer — Meet the people around you",
+    title: "Closer — Made for the moments that matter",
     description:
-      "Go live on campus, get paired with someone nearby, and make real friends in minutes.",
+      "Meet real people on campus, right now. Closer gets you face-to-face with someone nearby in minutes.",
     type: "website",
   },
 };

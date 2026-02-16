@@ -30,10 +30,10 @@ export default function Support() {
         <p>
           You can also email us at{" "}
           <a
-            href="mailto:support@getcloser.app"
+            href="mailto:support@closerapp.app"
             className="text-primary hover:underline"
           >
-            support@getcloser.app
+            support@closerapp.app
           </a>
         </p>
       </section>

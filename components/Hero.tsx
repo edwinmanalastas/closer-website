@@ -1,5 +1,6 @@
 import PhoneMockup from "./PhoneMockup";
 import ScrollReveal from "./ScrollReveal";
+import AppStoreBadge from "./AppStoreBadge";
 
 export default function Hero() {
   return (
@@ -13,26 +14,16 @@ export default function Hero() {
           <ScrollReveal>
             <div className="max-w-xl">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6">
-                Meet the people
+                Real connection
                 <br />
-                <span className="text-primary">around you.</span>
+                <span className="text-primary">starts in person.</span>
               </h1>
               <p className="text-lg md:text-xl text-muted leading-relaxed mb-10 max-w-md">
                 Like Pokemon GO for making friends on campus. Go live, get
                 paired with someone nearby, and meet in minutes — not days.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <a
-                  href="https://apps.apple.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary hover:bg-primary-hover text-white font-medium rounded-full transition-colors"
-                >
-                  <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M14.94 5.19A4.38 4.38 0 0 0 11.5 3.5a4.15 4.15 0 0 0-1 .13A3.07 3.07 0 0 0 9.5 2a3.07 3.07 0 0 0-1 1.63 4.15 4.15 0 0 0-1-.13A4.38 4.38 0 0 0 4.06 5.19 4.47 4.47 0 0 0 3 8.5c0 2.79 1.94 5.72 3.5 7.5.78.89 1.58 1.5 2 1.5s1.22-.61 2-1.5C12.06 14.22 14 11.29 14 8.5a4.47 4.47 0 0 0-1.06-3.31z"/>
-                  </svg>
-                  Download for iOS
-                </a>
+              <div className="flex flex-wrap items-center gap-4">
+                <AppStoreBadge />
                 <a
                   href="#how-it-works"
                   className="inline-flex items-center gap-2 px-7 py-3.5 border border-border text-foreground hover:bg-white/5 font-medium rounded-full transition-colors"

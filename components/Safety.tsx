@@ -3,24 +3,29 @@ import ScrollReveal from "./ScrollReveal";
 
 const safetyPoints = [
   {
-    title: "Timed Sessions",
+    title: "Timed Pairing",
     description:
-      "Live sessions have a 30-minute window. You control when you're visible.",
+      "Pairings last up to 30 minutes. End live whenever you want.",
   },
   {
-    title: "No Photos on the Map",
+    title: "Your Name Stays Private",
     description:
-      "You show up as an emoji, not a photo. Your identity stays private until you meet.",
+      "Your real name is hidden until you meet face-to-face. Others can view your profile, but your identity is yours to reveal.",
+  },
+  {
+    title: "No Pre-Meeting Messaging",
+    description:
+      "Chat only unlocks after you've met in person. No strangers in your DMs.",
   },
   {
     title: "Blocking & Reporting",
     description:
-      "One-tap blocking and reporting keeps the community safe and respectful.",
+      "Block or report anyone to keep the community safe and respectful.",
   },
   {
-    title: "Campus-Focused",
+    title: "Always In Control",
     description:
-      "Built specifically for university students in campus environments.",
+      "End your session with one tap, leave a pairing with two. No reason needed.",
   },
 ];
 

@@ -11,7 +11,7 @@ const features = [
     icon: "⚡",
     title: "Smart Pairing",
     description:
-      "Matched with nearby people based on proximity and shared interests. No endless swiping.",
+      "Matched with nearby people based on proximity. Meet in person, not through a screen.",
   },
   {
     icon: "🎯",
@@ -23,19 +23,19 @@ const features = [
     icon: "🤝",
     title: "Real Meetups",
     description:
-      "Compass-guided navigation to find your match in person. Meet in minutes, not days.",
+      "Find your match on the map and meet in person. In minutes, not days.",
   },
   {
     icon: "💬",
     title: "Messaging",
     description:
-      "Stay connected after meeting with in-app chat. Keep building the friendships you start.",
+      "Stay connected after meeting with in-app chat. Weekly nudges keep the friendship going.",
   },
   {
     icon: "🛡️",
     title: "Built for Safety",
     description:
-      "Timed sessions, blocking, reporting, and no photos on the map. Your safety comes first.",
+      "Timed sessions, blocking, reporting, and you're always in control. Your safety comes first.",
   },
 ];
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,8 +22,15 @@ export default function Header() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-tight">
-          Closer
+        <Link href="/" className="flex items-center gap-2.5">
+          <Image
+            src="/logo-white.png"
+            alt="Closer"
+            width={36}
+            height={20}
+            className="h-5 w-auto"
+          />
+          <span className="text-xl font-bold tracking-tight">Closer</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
