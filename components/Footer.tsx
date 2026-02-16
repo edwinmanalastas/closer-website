@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const links = [
   { href: "/privacy", label: "Privacy Policy" },
-  { href: "/terms", label: "Terms of Service" },
+  { href: "/terms", label: "Terms and Conditions" },
   { href: "/community-guidelines", label: "Community Guidelines" },
   { href: "/support", label: "Support" },
-  { href: "/safety", label: "Safety" },
+  { href: "/safety", label: "Safety Tips" },
 ];
 
 export default function Footer() {

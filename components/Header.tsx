@@ -41,12 +41,6 @@ export default function Header() {
             How It Works
           </a>
           <a
-            href="#features"
-            className="text-sm text-muted hover:text-foreground transition-colors"
-          >
-            Features
-          </a>
-          <a
             href="#safety"
             className="text-sm text-muted hover:text-foreground transition-colors"
           >

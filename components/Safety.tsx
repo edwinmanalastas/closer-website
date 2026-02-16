@@ -3,29 +3,29 @@ import ScrollReveal from "./ScrollReveal";
 
 const safetyPoints = [
   {
-    title: "Timed Pairing",
-    description:
-      "Pairings last up to 30 minutes. End live whenever you want.",
-  },
-  {
-    title: "Your Name Stays Private",
-    description:
-      "Your real name is hidden until you meet face-to-face. Others can view your profile, but your identity is yours to reveal.",
-  },
-  {
     title: "No Pre-Meeting Messaging",
     description:
       "Chat only unlocks after you've met in person. No strangers in your DMs.",
   },
   {
+    title: "Your Name Stays Private",
+    description:
+      "Your real name is hidden until you choose to share it face-to-face.",
+  },
+  {
+    title: "Timed Pairing",
+    description:
+      "Pairing sessions last up to 30 minutes. You set the pace.",
+  },
+  {
     title: "Blocking & Reporting",
     description:
-      "Block or report anyone to keep the community safe and respectful.",
+      "Block or report anyone, anytime. We take every report seriously.",
   },
   {
     title: "Always In Control",
     description:
-      "End your session with one tap, leave a pairing with two. No reason needed.",
+      "End your session in one tap, leave a pairing in two. No questions asked.",
   },
 ];
 
