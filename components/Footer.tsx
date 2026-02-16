@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-2.5">
             <Image
-              src="/logo-white.png"
+              src="/logo.png"
               alt="Closer"
               width={28}
               height={16}

@@ -24,7 +24,7 @@ export default function Header() {
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2.5">
           <Image
-            src="/logo-white.png"
+            src="/logo.png"
             alt="Closer"
             width={36}
             height={20}

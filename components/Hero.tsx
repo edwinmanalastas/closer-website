@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
       {/* Purple gradient glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/8 rounded-full blur-[128px] pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -26,7 +26,7 @@ export default function Hero() {
                 <AppStoreBadge />
                 <a
                   href="#how-it-works"
-                  className="inline-flex items-center gap-2 px-7 py-3.5 border border-border text-foreground hover:bg-white/5 font-medium rounded-full transition-colors"
+                  className="inline-flex items-center gap-2 px-7 py-3.5 border border-border text-foreground hover:bg-black/5 font-medium rounded-full transition-colors"
                 >
                   Learn More
                 </a>
