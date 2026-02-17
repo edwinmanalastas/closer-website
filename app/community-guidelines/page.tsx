@@ -2,6 +2,7 @@ import LegalLayout from "@/components/LegalLayout";
 
 export const metadata = {
   title: "Community Guidelines — Closer",
+  description: "Our community standards for keeping Closer a safe and respectful place to connect.",
 };
 
 export default function CommunityGuidelines() {

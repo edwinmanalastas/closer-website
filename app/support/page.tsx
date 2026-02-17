@@ -2,6 +2,7 @@ import LegalLayout from "@/components/LegalLayout";
 
 export const metadata = {
   title: "Support — Closer",
+  description: "Get help with Closer. Find answers to common questions or contact our support team.",
 };
 
 export default function Support() {

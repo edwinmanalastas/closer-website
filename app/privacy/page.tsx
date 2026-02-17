@@ -2,6 +2,7 @@ import LegalLayout from "@/components/LegalLayout";
 
 export const metadata = {
   title: "Privacy Policy — Closer",
+  description: "Learn how Closer collects, uses, and protects your personal information.",
 };
 
 export default function PrivacyPolicy() {

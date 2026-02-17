@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://closerapp.app"),
   title: "Closer — Made for the moments that matter",
   description:
     "Closer helps university students meet friends in person. Go live on the campus map, get paired with someone nearby, and meet face-to-face in minutes.",

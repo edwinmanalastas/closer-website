@@ -2,6 +2,7 @@ import LegalLayout from "@/components/LegalLayout";
 
 export const metadata = {
   title: "Safety Tips — Closer",
+  description: "Tips and best practices for staying safe while meeting new people on Closer.",
 };
 
 export default function SafetyTips() {

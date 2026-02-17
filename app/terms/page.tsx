@@ -2,6 +2,7 @@ import LegalLayout from "@/components/LegalLayout";
 
 export const metadata = {
   title: "Terms and Conditions — Closer",
+  description: "Read the terms and conditions for using the Closer app.",
 };
 
 export default function TermsAndConditions() {
