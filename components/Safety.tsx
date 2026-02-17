@@ -1,0 +1,92 @@
+import Image from "next/image";
+import PhoneMockup from "./PhoneMockup";
+import ScrollReveal from "./ScrollReveal";
+
+const safetyPoints = [
+  {
+    title: "No Pre-Meeting Messaging",
+    description:
+      "Chat only unlocks after you've met in person. No strangers in your DMs.",
+  },
+  {
+    title: "Your Name Stays Private",
+    description:
+      "Your real name is hidden until you choose to share it face-to-face.",
+  },
+  {
+    title: "Timed Pairing",
+    description:
+      "Pairing sessions last up to 30 minutes. You set the pace.",
+  },
+  {
+    title: "Blocking & Reporting",
+    description:
+      "Block or report anyone, anytime. We take every report seriously.",
+  },
+  {
+    title: "Always In Control",
+    description:
+      "End your session in one tap, leave a pairing in two. No questions asked.",
+  },
+];
+
+export default function Safety() {
+  return (
+    <section id="safety" className="py-32">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <ScrollReveal>
+            <div>
+              <p className="text-primary text-sm font-medium tracking-wider uppercase mb-4">
+                Safety
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Safety is not an
+                <br />
+                afterthought.
+              </h2>
+              <p className="text-muted text-lg mb-10 max-w-md">
+                Every feature in Closer is designed with your safety and comfort
+                in mind.
+              </p>
+
+              <div className="space-y-6">
+                {safetyPoints.map((point) => (
+                  <div key={point.title} className="flex gap-4">
+                    <div className="mt-1 w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                      <div className="w-2 h-2 rounded-full bg-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-medium mb-1">{point.title}</h3>
+                      <p className="text-muted text-sm leading-relaxed">
+                        {point.description}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href="/safety"
+                className="inline-flex items-center gap-2 text-primary font-medium mt-8 hover:underline"
+              >
+                View all safety tips →
+              </a>
+            </div>
+          </ScrollReveal>
+
+          <ScrollReveal className="hidden lg:flex justify-center">
+            <PhoneMockup>
+              <Image
+                src="/images/safety-screenshot.png"
+                alt="Closer app safety tips shown before going live"
+                fill
+                className="object-cover"
+              />
+            </PhoneMockup>
+          </ScrollReveal>
+        </div>
+      </div>
+    </section>
+  );
+}
