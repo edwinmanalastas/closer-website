@@ -1,3 +1,4 @@
+import Image from "next/image";
 import PhoneMockup from "./PhoneMockup";
 import ScrollReveal from "./ScrollReveal";
 
@@ -76,10 +77,11 @@ export default function Safety() {
 
           <ScrollReveal className="hidden lg:flex justify-center">
             <PhoneMockup>
-              <img
+              <Image
                 src="/images/safety-screenshot.png"
                 alt="Closer app safety tips shown before going live"
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </PhoneMockup>
           </ScrollReveal>
