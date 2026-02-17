@@ -22,7 +22,7 @@ export default function Header() {
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5">
+        <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); }} className="flex items-center gap-2.5">
           <Image
             src="/logo.png"
             alt="Closer"
@@ -31,7 +31,7 @@ export default function Header() {
             className="h-5 w-auto"
           />
           <span className="text-xl font-bold tracking-tight">Closer</span>
-        </Link>
+        </a>
 
         <div className="hidden md:flex items-center gap-8">
           <a

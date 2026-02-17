@@ -36,6 +36,16 @@ export default function HowItWorks() {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const sectionRef = useRef<HTMLDivElement>(null);
 
+  // Force mobile browsers to load first frame
+  useEffect(() => {
+    videoRefs.current.forEach((video) => {
+      if (video) {
+        video.load();
+        video.currentTime = 0.001;
+      }
+    });
+  }, []);
+
   // Track section visibility (stays active, doesn't unobserve)
   useEffect(() => {
     const section = sectionRef.current;
