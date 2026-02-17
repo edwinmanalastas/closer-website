@@ -2,23 +2,23 @@ import ScrollReveal from "./ScrollReveal";
 
 const timeline = [
   {
-    time: "11:30 AM",
+    time: "11:50 AM",
     title: "Class just ended",
     description: "You're hungry but no one's free.",
   },
   {
-    time: "11:32 AM",
+    time: "11:52 AM",
     title: "You go live",
     description: "You open Closer and go live near the dining hall.",
   },
   {
-    time: "11:33 AM",
+    time: "11:53 AM",
     title: "You match",
     description:
       "Someone nearby is also live — you match and head toward each other.",
   },
   {
-    time: "11:40 AM",
+    time: "12:00 PM",
     title: "New friend",
     description: "You meet, exchange names, and grab lunch together.",
   },

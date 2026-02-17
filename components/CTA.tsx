@@ -17,7 +17,7 @@ export default function CTA() {
                 <br />
                 someone new?
               </h2>
-              <p className="text-muted text-lg mb-10 max-w-md mx-auto">
+              <p className="text-muted text-lg mb-10 max-w-lg mx-auto">
                 Download Closer and start making real friends on campus.
               </p>
               <AppStoreBadge className="justify-center" />
