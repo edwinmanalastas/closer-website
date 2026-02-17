@@ -21,6 +21,21 @@ export const metadata: Metadata = {
     description:
       "Meet real people on campus, right now. Closer gets you face-to-face with someone nearby in minutes.",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Closer — Real connection starts in person",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Closer — Made for the moments that matter",
+    description:
+      "Meet real people on campus, right now. Closer gets you face-to-face with someone nearby in minutes.",
+    images: ["/images/og-image.png"],
   },
 };
 
