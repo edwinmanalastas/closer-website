@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://closerapp.app"),
-  title: "Closer — Made for the moments that matter",
+  title: "Closer",
   description:
     "Closer helps university students meet friends in person. Go live on the campus map, get paired with someone nearby, and meet face-to-face in minutes.",
   openGraph: {
-    title: "Closer — Made for the moments that matter",
+    title: "Closer",
     description:
       "Meet real people on campus, right now. Closer gets you face-to-face with someone nearby in minutes.",
     type: "website",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Closer — Made for the moments that matter",
+    title: "Closer",
     description:
       "Meet real people on campus, right now. Closer gets you face-to-face with someone nearby in minutes.",
     images: ["/images/og-image.png"],
