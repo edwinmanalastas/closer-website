@@ -37,29 +37,14 @@ export default function Hero() {
           {/* Right: Phone mockup */}
           <ScrollReveal className="hidden lg:flex justify-center">
             <PhoneMockup>
-              {/* Stylized map screen placeholder */}
-              <div className="w-full h-full bg-gradient-to-br from-[#1a1a2e] to-[#0A0A0F] relative">
-                {/* Grid pattern */}
-                <div
-                  className="absolute inset-0 opacity-10"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(rgba(123,91,253,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(123,91,253,0.3) 1px, transparent 1px)",
-                    backgroundSize: "40px 40px",
-                  }}
-                />
-                {/* Map dots */}
-                <div className="absolute top-1/3 left-1/4 w-3 h-3 bg-primary rounded-full animate-pulse" />
-                <div className="absolute top-1/2 right-1/3 w-2.5 h-2.5 bg-primary/70 rounded-full animate-pulse [animation-delay:0.5s]" />
-                <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-primary/50 rounded-full animate-pulse [animation-delay:1s]" />
-                <div className="absolute top-2/3 left-1/3 w-3.5 h-3.5 bg-primary rounded-full animate-pulse [animation-delay:0.3s]" />
-                {/* Center user */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                  <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-lg shadow-[0_0_20px_rgba(123,91,253,0.5)]">
-                    👋
-                  </div>
-                </div>
-              </div>
+              <video
+                src="/videos/hero-map.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-full object-cover"
+              />
             </PhoneMockup>
           </ScrollReveal>
         </div>

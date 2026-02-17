@@ -64,30 +64,23 @@ export default function Safety() {
                   </div>
                 ))}
               </div>
+
+              <a
+                href="/safety"
+                className="inline-flex items-center gap-2 text-primary font-medium mt-8 hover:underline"
+              >
+                View all safety tips →
+              </a>
             </div>
           </ScrollReveal>
 
           <ScrollReveal className="hidden lg:flex justify-center">
             <PhoneMockup>
-              {/* Stylized safety screen */}
-              <div className="w-full h-full bg-gradient-to-br from-[#1a1a2e] to-[#0A0A0F] flex flex-col items-center justify-center gap-6 px-6">
-                <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center">
-                  <span className="text-3xl">🛡️</span>
-                </div>
-                <div className="text-center">
-                  <div className="text-white text-sm font-medium mb-1">
-                    You&apos;re Protected
-                  </div>
-                  <div className="text-white/40 text-xs">
-                    Session active · 24:30 remaining
-                  </div>
-                </div>
-                <div className="w-full space-y-2">
-                  <div className="h-8 bg-white/5 rounded-lg" />
-                  <div className="h-8 bg-white/5 rounded-lg" />
-                  <div className="h-8 bg-primary/10 rounded-lg border border-primary/20" />
-                </div>
-              </div>
+              <img
+                src="/images/safety-screenshot.png"
+                alt="Closer app safety tips shown before going live"
+                className="w-full h-full object-cover"
+              />
             </PhoneMockup>
           </ScrollReveal>
         </div>
