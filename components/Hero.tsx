@@ -16,6 +16,7 @@ export default function Hero() {
               <PhoneMockup>
                 <video
                   src="/videos/hero-map.mp4"
+                  poster="/images/poster-hero-map.jpg"
                   autoPlay
                   loop
                   muted

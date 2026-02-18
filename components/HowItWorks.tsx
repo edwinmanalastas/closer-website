@@ -10,18 +10,21 @@ const steps = [
     title: "Go Live",
     description: "Go live and see who's around you on campus.",
     video: "/videos/go-live.mp4",
+    poster: "/images/poster-go-live.jpg",
   },
   {
     number: "02",
     title: "Get Paired",
     description: "Match with someone nearby and meet in person.",
     video: "/videos/get-paired.mp4",
+    poster: "/images/poster-get-paired.jpg",
   },
   {
     number: "03",
     title: "Make a Friend",
     description: "Exchange names and add each other as friends.",
     video: "/videos/friends.mp4",
+    poster: "/images/poster-friends.jpg",
   },
 ];
 
@@ -204,6 +207,7 @@ export default function HowItWorks() {
                     <video
                       ref={(el) => { videoRefs.current[index] = el; }}
                       src={step.video}
+                      poster={step.poster}
                       muted
                       playsInline
                       preload="auto"
