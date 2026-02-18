@@ -286,8 +286,8 @@ export default function Support() {
               Name confirmation is Closer&apos;s anti-catfishing system. It
               proves you physically met the person and introduced yourselves —
               you can&apos;t guess a stranger&apos;s name without asking them.
-              If the name someone gives you doesn&apos;t match what you expect,
-              don&apos;t confirm it.
+              Type exactly what they tell you — if it doesn&apos;t match their
+              real first name on file, Closer will reject it.
             </p>
           </div>
           <div>

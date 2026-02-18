@@ -212,9 +212,10 @@ export default function SafetyTips() {
             <strong className="text-foreground">
               Verify their identity during name confirmation
             </strong>{" "}
-            — when you meet, introduce yourself and ask for their name. If the
-            name they give doesn&apos;t match what you expect, do not confirm
-            it. This is Closer&apos;s anti-catfishing system — use it.
+            — when you meet, introduce yourself and ask their name. Type
+            exactly what they tell you — if it doesn&apos;t match their real
+            first name on file, Closer will reject it. This is how Closer
+            prevents catfishing.
           </li>
         </ul>
       </section>
