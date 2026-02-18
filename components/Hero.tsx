@@ -9,16 +9,32 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-6xl mx-auto px-6 w-full">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center mt-4 lg:mt-0">
+          {/* Mobile: Small phone mockup above text */}
+          <div className="lg:hidden flex justify-center h-0 overflow-visible">
+            <div className="scale-[0.38] origin-center -mt-[240px]">
+              <PhoneMockup>
+                <video
+                  src="/videos/hero-map.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover"
+                />
+              </PhoneMockup>
+            </div>
+          </div>
+
           {/* Left: Copy */}
           <ScrollReveal>
             <div className="max-w-xl">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-3 lg:mb-6">
                 Real connection
                 <br />
                 <span className="text-primary">starts in person.</span>
               </h1>
-              <p className="text-lg md:text-xl text-muted leading-relaxed mb-10 max-w-md">
+              <p className="text-lg md:text-xl text-muted leading-relaxed mb-6 lg:mb-10 max-w-md">
                 Like Pokemon GO for making friends on campus. Go live, get
                 paired with someone nearby, and meet in minutes — not days.
               </p>
