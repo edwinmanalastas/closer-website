@@ -27,14 +27,26 @@ const steps = [
 
 const LAST_STEP = steps.length - 1;
 const FADE_DURATION = 400;
+const MD_BREAKPOINT = 768;
 
 export default function HowItWorks() {
   const [activeStep, setActiveStep] = useState(0);
   const [hasEnteredViewport, setHasEnteredViewport] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const [isResetting, setIsResetting] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [mobileActiveStep, setMobileActiveStep] = useState(0);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
+  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const sectionRef = useRef<HTMLDivElement>(null);
+
+  // Detect mobile vs desktop
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < MD_BREAKPOINT);
+    check();
+    window.addEventListener("resize", check, { passive: true });
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   // Force mobile browsers to load first frame
   useEffect(() => {
@@ -46,8 +58,42 @@ export default function HowItWorks() {
     });
   }, []);
 
-  // Track section visibility (stays active, doesn't unobserve)
+  // --- MOBILE: observe each card individually, play when in view ---
   useEffect(() => {
+    if (!isMobile) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = cardRefs.current.indexOf(entry.target as HTMLDivElement);
+          if (index === -1) return;
+          const video = videoRefs.current[index];
+          if (!video) return;
+
+          if (entry.isIntersecting) {
+            setMobileActiveStep(index);
+            video.currentTime = 0;
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    cardRefs.current.forEach((card) => {
+      if (card) observer.observe(card);
+    });
+
+    return () => observer.disconnect();
+  }, [isMobile]);
+
+  // --- DESKTOP: sequential auto-play logic ---
+
+  // Track section visibility
+  useEffect(() => {
+    if (isMobile) return;
     const section = sectionRef.current;
     if (!section) return;
 
@@ -63,11 +109,11 @@ export default function HowItWorks() {
 
     observer.observe(section);
     return () => observer.disconnect();
-  }, [hasEnteredViewport]);
+  }, [hasEnteredViewport, isMobile]);
 
   // Pause/resume active video based on scroll visibility
   useEffect(() => {
-    if (!hasEnteredViewport || isResetting) return;
+    if (isMobile || !hasEnteredViewport || isResetting) return;
 
     const activeVideo = videoRefs.current[activeStep];
     if (!activeVideo) return;
@@ -77,16 +123,16 @@ export default function HowItWorks() {
     } else {
       activeVideo.pause();
     }
-  }, [isVisible, hasEnteredViewport, activeStep, isResetting]);
+  }, [isVisible, hasEnteredViewport, activeStep, isResetting, isMobile]);
 
-  // When a video ends, advance to the next one
+  // When a video ends, advance to the next one (desktop only)
   const handleVideoEnded = useCallback((endedIndex: number) => {
+    if (isMobile) return;
+
     if (endedIndex === LAST_STEP) {
-      // Loop transition: fade everything out, reset all videos, fade back in
       setIsResetting(true);
 
       setTimeout(() => {
-        // Reset all videos while hidden
         videoRefs.current.forEach((video) => {
           if (video) {
             video.pause();
@@ -96,39 +142,33 @@ export default function HowItWorks() {
 
         setActiveStep(0);
         setIsResetting(false);
-
-        // The isVisible effect will handle playing — no need to play here
       }, FADE_DURATION);
     } else {
-      // Normal transition: just advance, don't reset the finished video
       const nextIndex = endedIndex + 1;
       setActiveStep(nextIndex);
-
-      // The isVisible effect will handle playing when activeStep updates
     }
-  }, []);
+  }, [isMobile]);
 
-  // Click a step to skip to it
+  // Click a step to skip to it (desktop only)
   const handleStepClick = useCallback((clickedIndex: number) => {
-    if (!hasEnteredViewport || clickedIndex === activeStep || isResetting) return;
+    if (isMobile || !hasEnteredViewport || clickedIndex === activeStep || isResetting) return;
 
-    // Pause current video (don't reset — leave on current frame)
     const currentVideo = videoRefs.current[activeStep];
     if (currentVideo) {
       currentVideo.pause();
     }
 
-    // Reset target video — the isVisible effect will handle playing
     const nextVideo = videoRefs.current[clickedIndex];
     if (nextVideo) {
       nextVideo.currentTime = 0;
     }
 
     setActiveStep(clickedIndex);
-  }, [activeStep, hasEnteredViewport, isResetting]);
+  }, [activeStep, hasEnteredViewport, isResetting, isMobile]);
 
-  // Resolve opacity class for each step
+  // Resolve opacity class for each step (desktop only — mobile always full opacity)
   const getOpacityClass = (index: number) => {
+    if (isMobile) return index === mobileActiveStep ? "opacity-100" : "opacity-40";
     if (isResetting) return "opacity-0";
     if (!hasEnteredViewport) return "opacity-100";
     return index === activeStep ? "opacity-100" : "opacity-40";
@@ -153,6 +193,7 @@ export default function HowItWorks() {
             {steps.map((step, index) => (
               <div
                 key={step.number}
+                ref={(el) => { cardRefs.current[index] = el; }}
                 className="reveal flex flex-col items-center cursor-pointer"
                 onClick={() => handleStepClick(index)}
               >
@@ -166,6 +207,7 @@ export default function HowItWorks() {
                       muted
                       playsInline
                       preload="auto"
+                      loop={isMobile}
                       onEnded={() => handleVideoEnded(index)}
                       className="w-full h-full object-cover scale-100"
                     />
@@ -173,7 +215,7 @@ export default function HowItWorks() {
                   <div className="mt-8 text-center">
                     <span
                       className={`text-xs font-mono mb-2 block transition-colors duration-500 ${
-                        index === activeStep ? "text-primary" : "text-primary/30"
+                        (isMobile ? index === mobileActiveStep : index === activeStep) ? "text-primary" : "text-primary/30"
                       }`}
                     >
                       {step.number}
