@@ -32,25 +32,25 @@ const safetyPoints = [
 
 export default function Safety() {
   return (
-    <section id="safety" className="py-32">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="safety" className="py-20 sm:py-32">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <ScrollReveal>
             <div>
               <p className="text-primary text-sm font-medium tracking-wider uppercase mb-4">
                 Safety
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
                 Safety is not an
                 <br />
                 afterthought.
               </h2>
-              <p className="text-muted text-lg mb-10 max-w-md">
+              <p className="text-muted text-base sm:text-lg mb-10 max-w-md">
                 Every feature in Closer is designed with your safety and comfort
                 in mind.
               </p>
 
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {safetyPoints.map((point) => (
                   <div key={point.title} className="flex gap-4">
                     <div className="mt-1 w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0">

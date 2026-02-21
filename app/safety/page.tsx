@@ -22,7 +22,7 @@ export default function SafetyTips() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           1. Safety by Design
         </h2>
         <p className="mb-3">
@@ -121,7 +121,7 @@ export default function SafetyTips() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           2. Before Going Live
         </h2>
         <p className="mb-3">
@@ -166,7 +166,7 @@ export default function SafetyTips() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           3. During a Pairing
         </h2>
         <p className="mb-3">
@@ -221,7 +221,7 @@ export default function SafetyTips() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           4. After Meeting
         </h2>
         <p className="mb-3">
@@ -265,7 +265,7 @@ export default function SafetyTips() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           5. Online Safety
         </h2>
         <ul className="list-disc list-inside space-y-3">
@@ -304,7 +304,7 @@ export default function SafetyTips() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           6. Blocking &amp; Reporting
         </h2>
 
@@ -356,7 +356,7 @@ export default function SafetyTips() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           7. Your Privacy &amp; Control
         </h2>
         <p className="mb-3">You are always in control of your experience:</p>
@@ -391,7 +391,7 @@ export default function SafetyTips() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           8. Emergency &amp; Support Resources
         </h2>
         <p className="mb-4">

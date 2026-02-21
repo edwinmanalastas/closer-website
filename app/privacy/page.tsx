@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
   return (
     <LegalLayout title="Privacy Policy" lastUpdated="February 2026">
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           1. Introduction
         </h2>
         <p className="mb-3">
@@ -38,7 +38,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           2. Information We Collect
         </h2>
 
@@ -153,7 +153,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           3. How We Use Your Information
         </h2>
         <p className="mb-3">
@@ -212,7 +212,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           4. How We Share Your Information
         </h2>
         <p className="mb-3">
@@ -254,7 +254,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           5. Third-Party Services
         </h2>
         <p className="mb-4">
@@ -337,7 +337,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           6. Permissions We Request
         </h2>
 
@@ -398,7 +398,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           7. Data Retention
         </h2>
         <p className="mb-3">
@@ -441,7 +441,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           8. Account Deletion
         </h2>
         <p className="mb-3">
@@ -478,7 +478,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           9. Your Privacy Rights
         </h2>
         <p className="mb-3">
@@ -530,7 +530,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           10. Children&apos;s Privacy
         </h2>
         <p className="mb-3">
@@ -556,7 +556,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           11. Security Measures
         </h2>
         <p className="mb-3">
@@ -606,7 +606,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           12. Changes to This Privacy Policy
         </h2>
         <p className="mb-3">
@@ -626,7 +626,7 @@ export default function PrivacyPolicy() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
           13. Contact Us
         </h2>
         <p className="mb-3">
