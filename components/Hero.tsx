@@ -30,7 +30,7 @@ export default function Hero() {
           {/* Left: Copy */}
           <ScrollReveal>
             <div className="max-w-xl">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-3 lg:mb-6">
+              <h1 className="text-[2.75rem] sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-3 lg:mb-6">
                 Real connection
                 <br />
                 <span className="text-primary">starts in person.</span>
