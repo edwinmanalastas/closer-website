@@ -178,21 +178,21 @@ export default function HowItWorks() {
   };
 
   return (
-    <section id="how-it-works" className="py-20 sm:py-32">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="how-it-works" className="py-32">
+      <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal>
-          <div className="text-center mb-12 sm:mb-20">
+          <div className="text-center mb-20">
             <p className="text-primary text-sm font-medium tracking-wider uppercase mb-4">
               How It Works
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold">
               Three steps to a new friend.
             </h2>
           </div>
         </ScrollReveal>
 
         <ScrollReveal stagger>
-          <div ref={sectionRef} className="grid md:grid-cols-3 gap-8 sm:gap-12">
+          <div ref={sectionRef} className="grid md:grid-cols-3 gap-12">
             {steps.map((step, index) => (
               <div
                 key={step.number}

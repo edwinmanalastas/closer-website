@@ -9,7 +9,7 @@ export default function TermsAndConditions() {
   return (
     <LegalLayout title="Terms and Conditions" lastUpdated="February 2026">
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           1. Introduction
         </h2>
         <p className="mb-3">
@@ -54,7 +54,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           2. Account Eligibility
         </h2>
         <p className="mb-3">
@@ -90,7 +90,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           3. Your Responsibilities
         </h2>
         <p className="mb-3">By using the Service, you agree to:</p>
@@ -177,7 +177,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           4. Content
         </h2>
 
@@ -232,7 +232,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           5. Prohibited Content
         </h2>
         <p className="mb-3">You may not upload or share content that:</p>
@@ -280,7 +280,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           6. Reporting &amp; Moderation
         </h2>
         <p className="mb-3">
@@ -325,7 +325,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           7. Privacy
         </h2>
         <p className="mb-3">
@@ -353,7 +353,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           8. Rights We Grant You
         </h2>
         <p>
@@ -368,7 +368,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           9. Rights You Grant Closer
         </h2>
         <p className="mb-3">
@@ -403,7 +403,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           10. Account Termination
         </h2>
         <p className="mb-3">
@@ -430,7 +430,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           11. Disclaimer
         </h2>
         <p className="font-semibold text-foreground uppercase text-sm leading-relaxed mb-3">
@@ -462,7 +462,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           12. Limitation of Liability
         </h2>
         <p className="font-semibold text-foreground uppercase text-sm leading-relaxed mb-3">
@@ -490,7 +490,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           13. Location-Based Features
         </h2>
         <p className="mb-3">
@@ -518,7 +518,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           14. Changes to These Terms
         </h2>
         <p className="mb-3">
@@ -543,7 +543,7 @@ export default function TermsAndConditions() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           15. General
         </h2>
 

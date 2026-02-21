@@ -32,7 +32,7 @@ export default function CommunityGuidelines() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           1. Community Norms
         </h2>
 
@@ -82,7 +82,7 @@ export default function CommunityGuidelines() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           2. Prohibited Content
         </h2>
         <p className="mb-3">
@@ -128,7 +128,7 @@ export default function CommunityGuidelines() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           3. Prohibited Conduct
         </h2>
         <p className="mb-3">
@@ -169,7 +169,7 @@ export default function CommunityGuidelines() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           4. Profiles
         </h2>
         <ul className="list-disc list-inside space-y-1.5">
@@ -202,7 +202,7 @@ export default function CommunityGuidelines() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           5. Meeting In Person
         </h2>
         <p className="mb-3">
@@ -257,7 +257,7 @@ export default function CommunityGuidelines() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           6. Messages
         </h2>
         <p className="mb-3">
@@ -284,7 +284,7 @@ export default function CommunityGuidelines() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           7. Blocking &amp; Reporting
         </h2>
         <p className="mb-3">
@@ -321,7 +321,7 @@ export default function CommunityGuidelines() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           8. Respect Others&apos; Privacy
         </h2>
         <p>
@@ -334,7 +334,7 @@ export default function CommunityGuidelines() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           9. Consequences
         </h2>
         <p className="mb-3">
@@ -357,7 +357,7 @@ export default function CommunityGuidelines() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           10. Contact
         </h2>
         <p>

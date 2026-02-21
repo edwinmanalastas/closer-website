@@ -9,7 +9,7 @@ export default function Support() {
   return (
     <LegalLayout title="Support">
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           Need Help?
         </h2>
         <p>
@@ -20,7 +20,7 @@ export default function Support() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           Contact Us
         </h2>
         <ul className="list-disc list-inside space-y-3">
@@ -47,7 +47,7 @@ export default function Support() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           Getting Started
         </h2>
         <div className="space-y-6">
@@ -113,7 +113,7 @@ export default function Support() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           Going Live
         </h2>
         <div className="space-y-6">
@@ -171,7 +171,7 @@ export default function Support() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           Pairing & Meeting
         </h2>
         <div className="space-y-6">
@@ -263,7 +263,7 @@ export default function Support() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           Becoming Friends
         </h2>
         <div className="space-y-6">
@@ -305,7 +305,7 @@ export default function Support() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           Friends & Messaging
         </h2>
         <div className="space-y-6">
@@ -353,7 +353,7 @@ export default function Support() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">Safety</h2>
+        <h2 className="text-xl font-semibold text-foreground mb-4">Safety</h2>
         <div className="space-y-6">
           <div>
             <h3 className="font-medium text-foreground mb-2">
@@ -436,7 +436,7 @@ export default function Support() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
+        <h2 className="text-xl font-semibold text-foreground mb-4">
           Account & Privacy
         </h2>
         <div className="space-y-6">
@@ -500,7 +500,7 @@ export default function Support() {
       </section>
 
       <section>
-        <h2 className="text-lg sm:text-xl font-semibold text-foreground mb-4">Legal</h2>
+        <h2 className="text-xl font-semibold text-foreground mb-4">Legal</h2>
         <p>
           For the full details on how Closer works, your rights, and our
           commitments to you:

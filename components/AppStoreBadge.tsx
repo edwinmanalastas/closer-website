@@ -5,7 +5,7 @@ interface AppStoreBadgeProps {
 export default function AppStoreBadge({ className = "" }: AppStoreBadgeProps) {
   return (
     <div className={`relative inline-block group ${className}`}>
-      <div className="relative bg-black border border-black/20 rounded-xl px-4 py-2.5 sm:px-6 sm:py-3 flex items-center gap-2 sm:gap-3 hover:border-black/40 transition-colors cursor-default">
+      <div className="relative bg-black border border-black/20 rounded-xl px-6 py-3 flex items-center gap-3 hover:border-black/40 transition-colors cursor-default">
         {/* Apple logo */}
         <svg
           width="24"
@@ -20,7 +20,7 @@ export default function AppStoreBadge({ className = "" }: AppStoreBadgeProps) {
           <span className="text-white/80 text-[10px] leading-tight">
             Coming Soon on the
           </span>
-          <span className="text-white text-base sm:text-lg font-semibold leading-tight">
+          <span className="text-white text-lg font-semibold leading-tight">
             App Store
           </span>
         </div>

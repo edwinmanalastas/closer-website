@@ -31,14 +31,14 @@ const timeline = [
 
 export default function Scenario() {
   return (
-    <section id="scenario" className="py-20 sm:py-32">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section id="scenario" className="py-32">
+      <div className="max-w-6xl mx-auto px-6">
         <ScrollReveal>
-          <div className="text-center mb-12 sm:mb-20">
+          <div className="text-center mb-20">
             <p className="text-primary text-sm font-medium tracking-wider uppercase mb-4">
               Your Day
             </p>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+            <h2 className="text-3xl md:text-4xl font-bold">
               Here&apos;s what your day could look like.
             </h2>
           </div>
@@ -47,7 +47,7 @@ export default function Scenario() {
         <ScrollReveal stagger>
           <div className="max-w-xl mx-auto">
             {timeline.map((step, index) => (
-              <div key={step.time} className="reveal flex gap-4 sm:gap-6">
+              <div key={step.time} className="reveal flex gap-6">
                 {/* Timeline line + dot */}
                 <div className="flex flex-col items-center">
                   <div className="w-3 h-3 rounded-full bg-primary shrink-0 mt-1.5" />
@@ -57,7 +57,7 @@ export default function Scenario() {
                 </div>
 
                 {/* Content */}
-                <div className={index < timeline.length - 1 ? "pb-8 sm:pb-10" : ""}>
+                <div className={index < timeline.length - 1 ? "pb-10" : ""}>
                   <span className="text-xs font-mono text-primary block mb-1">
                     {step.time}
                   </span>
