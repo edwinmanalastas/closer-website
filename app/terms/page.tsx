@@ -344,10 +344,11 @@ export default function TermsAndConditions() {
           offline.
         </p>
         <p>
-          Background location permission is used to maintain location tracking
-          during pairing sessions when the app is backgrounded. It is not used
-          for passive location tracking. You can disable location sharing in
-          your device settings, though this will prevent core features from
+          Location is only collected while you are actively in a live session
+          and the app is open. Closer does not track your location in the
+          background. When you end your session, location tracking stops
+          completely. You can disable location permissions in your device
+          settings at any time, though this will prevent core features from
           functioning.
         </p>
       </section>

@@ -67,7 +67,6 @@ export default function PrivacyPolicy() {
           <li>Bio (optional)</li>
           <li>Custom map emoji</li>
           <li>Phone number (used for authentication)</li>
-          <li>Email address (optional)</li>
         </ul>
 
         <h3 className="font-medium text-foreground mt-6 mb-3">
@@ -101,14 +100,11 @@ export default function PrivacyPolicy() {
           automatically deleted from our real-time database.
         </p>
         <p className="mb-3">
-          <strong className="text-foreground">
-            Background location (&ldquo;Always Allow&rdquo;):
-          </strong>{" "}
-          This permission is requested so that location tracking continues when
-          the app is backgrounded during a pairing session. The app does{" "}
-          <strong className="text-foreground">not</strong> passively track your
-          location when you are not live. When you end your session, location
-          tracking stops completely.
+          The app does{" "}
+          <strong className="text-foreground">not</strong> track your location in
+          the background. Location is only used while the app is open and you are
+          actively in a live session. When you end your session, location tracking
+          stops completely.
         </p>
         <p>
           <strong className="text-foreground">Proximity notifications:</strong>{" "}
@@ -348,13 +344,6 @@ export default function PrivacyPolicy() {
             for map and live session positioning
           </li>
           <li>
-            <strong className="text-foreground">
-              Location (background/&ldquo;Always Allow&rdquo;)
-            </strong>{" "}
-            — to keep location active during pairing sessions when the app is
-            backgrounded (not used for passive tracking)
-          </li>
-          <li>
             <strong className="text-foreground">Camera</strong> — for taking
             profile photos
           </li>
@@ -372,9 +361,9 @@ export default function PrivacyPolicy() {
         <ul className="list-disc list-inside space-y-1.5">
           <li>
             <strong className="text-foreground">
-              Location (fine + background)
+              Location (fine)
             </strong>{" "}
-            — same as iOS
+            — for map and live session positioning
           </li>
           <li>
             <strong className="text-foreground">Camera</strong> — same as iOS

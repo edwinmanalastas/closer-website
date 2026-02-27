@@ -82,10 +82,9 @@ export default function Support() {
               <strong className="text-foreground">Notifications</strong> — so
               you know when someone wants to meet you.{" "}
               <strong className="text-foreground">Location</strong> — so the app
-              can show who&apos;s nearby. The &ldquo;Always Allow&rdquo;
-              location permission is only used during active pairings so the
-              session continues when you switch apps briefly. Closer never tracks
-              your location in the background outside of a pairing.
+              can show who&apos;s nearby. Closer only uses your location while
+              the app is open and you&apos;ve chosen to go live. It never tracks
+              you in the background.
             </p>
           </div>
           <div>
