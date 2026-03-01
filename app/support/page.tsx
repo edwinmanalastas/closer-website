@@ -92,8 +92,8 @@ export default function Support() {
               Do I need to be a university student?
             </h3>
             <p>
-              Closer is designed for university students, but anyone 18 or older
-              can use it.
+              Closer is designed for university campuses, but anyone 18 or older
+              can join and use it.
             </p>
           </div>
           <div>
@@ -372,8 +372,9 @@ export default function Support() {
             </h3>
             <p>
               From their profile or chat, tap &ldquo;Report.&rdquo; Describe
-              what happened in your own words. Reporting automatically blocks
-              the user. Every report is reviewed by our team.
+              what happened in your own words. After submitting, you&apos;ll be
+              asked if you also want to block the user. Every report is
+              reviewed by our team.
             </p>
           </div>
           <div>
@@ -445,7 +446,7 @@ export default function Support() {
             </h3>
             <p>
               Tap your profile photo in the top corner of the map screen. Switch
-              to the Edit tab to update any field — photos, interests, bio, what
+              to the Edit tab to update any field — photos, interests, what
               you&apos;re looking for, and more.
             </p>
           </div>

@@ -94,9 +94,9 @@ export default function SafetyTips() {
           </li>
           <li>
             <strong className="text-foreground">Reporting</strong> — report any
-            user with a description of what happened. Reporting automatically
-            blocks the reported user. Every report is reviewed by our moderation
-            team.
+            user with a description of what happened. After submitting, you can
+            also choose to block them. Every report is reviewed by our
+            moderation team.
           </li>
           <li>
             <strong className="text-foreground">
@@ -338,7 +338,7 @@ export default function SafetyTips() {
           <li>
             You provide a description of what happened (free-form text)
           </li>
-          <li>The reported user is automatically blocked from contacting you</li>
+          <li>You&apos;re asked if you also want to block the user</li>
           <li>The report is sent to our moderation team for review</li>
         </ul>
 

@@ -64,7 +64,6 @@ export default function PrivacyPolicy() {
           </li>
           <li>Interests (selected from predefined categories)</li>
           <li>Profile photo and gallery photos (up to 2 additional)</li>
-          <li>Bio (optional)</li>
           <li>Custom map emoji</li>
           <li>Phone number (used for authentication)</li>
         </ul>

@@ -87,7 +87,7 @@ export default function CommunityGuidelines() {
         </h2>
         <p className="mb-3">
           The following content is prohibited on Closer, whether in profile
-          photos, gallery photos, bios, or messages:
+          photos, gallery photos, or messages:
         </p>
         <ul className="list-disc list-inside space-y-1.5">
           <li>
@@ -190,7 +190,7 @@ export default function CommunityGuidelines() {
             name others will confirm when you meet in person
           </li>
           <li>
-            Do not include personal contact information in your bio or messages
+            Do not include personal contact information in your profile or messages
             (phone numbers, email addresses, social media handles, or financial
             information)
           </li>

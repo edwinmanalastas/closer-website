@@ -187,7 +187,7 @@ export default function TermsAndConditions() {
         <p className="mb-3">
           &ldquo;Your Content&rdquo; includes all information, photos, text, and
           other material that you upload or provide while using the Service,
-          including your profile photo, gallery photos, bio, and messages.
+          including your profile photo, gallery photos, and messages.
         </p>
         <p className="mb-3">
           You are solely responsible for Your Content. You represent and warrant
