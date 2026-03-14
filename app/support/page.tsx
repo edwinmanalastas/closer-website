@@ -101,11 +101,12 @@ export default function Support() {
               How do I complete my profile?
             </h3>
             <p>
-              Add a profile photo, up to 2 gallery photos, your interests (3–5
-              from 15 categories), what you&apos;re looking for, and your
-              university. A completion ring around your profile photo shows your
-              progress — you need at least 90% completion to go live, so
-              everyone on the map has a real, complete profile.
+              Add a profile photo, up to 2 gallery photos, your interests (3+
+              from 15 categories), what you&apos;re looking for, your
+              university, and an optional status text. A completion ring around
+              your profile photo shows your progress — you need at least 90%
+              completion to go live, so everyone on the map has a real,
+              complete profile.
             </p>
           </div>
         </div>
@@ -456,9 +457,10 @@ export default function Support() {
             </h3>
             <p>
               Tap the filter icon on the map screen to change your &ldquo;Show
-              Me&rdquo; preference (Men, Women, or Everyone). This filter is
-              mutual — you only see someone if your preference includes their
-              gender and theirs includes yours.
+              Me&rdquo; preference (Men, Women, or Everyone) and set your
+              preferred age range. Both filters are mutual — you only see
+              someone if your preferences align with theirs and theirs with
+              yours.
             </p>
           </div>
           <div>

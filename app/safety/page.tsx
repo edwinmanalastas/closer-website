@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function SafetyTips() {
   return (
-    <LegalLayout title="Safety Tips" lastUpdated="February 2026">
+    <LegalLayout title="Safety Tips" lastUpdated="March 2026">
       <section>
         <p className="mb-3">
           Closer is built to help you make genuine friendships in person. Your

@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function TermsAndConditions() {
   return (
-    <LegalLayout title="Terms and Conditions" lastUpdated="February 2026">
+    <LegalLayout title="Terms and Conditions" lastUpdated="March 2026">
       <section>
         <h2 className="text-xl font-semibold text-foreground mb-4">
           1. Introduction
@@ -291,7 +291,7 @@ export default function TermsAndConditions() {
         <p className="mb-3">
           If you encounter concerning behavior, you can report a user directly
           through the app. Reports are reviewed by our moderation team, and
-          reported users are automatically blocked from contacting you. You may
+          you will be given the option to also block the reported user. You may
           also contact us at{" "}
           <a
             href="mailto:support@closerapp.app"

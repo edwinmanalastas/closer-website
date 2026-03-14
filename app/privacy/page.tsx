@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <LegalLayout title="Privacy Policy" lastUpdated="February 2026">
+    <LegalLayout title="Privacy Policy" lastUpdated="March 2026">
       <section>
         <h2 className="text-xl font-semibold text-foreground mb-4">
           1. Introduction
@@ -64,6 +64,7 @@ export default function PrivacyPolicy() {
           </li>
           <li>Interests (selected from predefined categories)</li>
           <li>Profile photo and gallery photos (up to 2 additional)</li>
+          <li>Status text (optional short description)</li>
           <li>Custom map emoji</li>
           <li>Phone number (used for authentication)</li>
         </ul>
@@ -105,13 +106,22 @@ export default function PrivacyPolicy() {
           actively in a live session. When you end your session, location tracking
           stops completely.
         </p>
+        <p className="mb-3">
+          <strong className="text-foreground">During active pairing:</strong>{" "}
+          When you are paired with another user, both users can see each
+          other&apos;s real-time location on the map to facilitate meeting up in
+          person. This location sharing ends when the pairing ends (either by
+          completion, cancellation, or timeout).
+        </p>
         <p>
           <strong className="text-foreground">Proximity notifications:</strong>{" "}
           When you go live, your location is saved as your &ldquo;last known
           location.&rdquo; This is used to notify nearby offline users that
           someone has gone live within 1km of where they last went live. This
-          saved location expires after 1 hour. Notifications are based on where
-          you last went live, not your current location.
+          saved location is retained for up to 24 hours. You will not receive
+          repeated notifications from the same user within 1 hour.
+          Notifications are based on where you last went live, not your
+          current location.
         </p>
 
         <h3 className="font-medium text-foreground mt-6 mb-3">
@@ -308,10 +318,15 @@ export default function PrivacyPolicy() {
                 <td className="py-3 pr-4">Usage analytics</td>
                 <td className="py-3">Non-PII event data</td>
               </tr>
-              <tr>
+              <tr className="border-b border-border/50">
                 <td className="py-3 pr-4">Expo Location API</td>
                 <td className="py-3 pr-4">GPS tracking</td>
                 <td className="py-3">Location coordinates</td>
+              </tr>
+              <tr>
+                <td className="py-3 pr-4">Sentry</td>
+                <td className="py-3 pr-4">Crash reporting, error tracking</td>
+                <td className="py-3">Error data, device info (no PII)</td>
               </tr>
             </tbody>
           </table>
@@ -401,8 +416,8 @@ export default function PrivacyPolicy() {
           </li>
           <li>
             <strong className="text-foreground">Last known location:</strong>{" "}
-            Expires after 1 hour and is no longer used for proximity
-            notifications
+            Retained for up to 24 hours for proximity notifications, then
+            automatically expired
           </li>
           <li>
             <strong className="text-foreground">Messages:</strong> Stored while

@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function CommunityGuidelines() {
   return (
-    <LegalLayout title="Community Guidelines" lastUpdated="February 2026">
+    <LegalLayout title="Community Guidelines" lastUpdated="March 2026">
       <section>
         <p className="mb-3">
           Welcome to the Closer community. Our mission is to help university
@@ -299,9 +299,10 @@ export default function CommunityGuidelines() {
         </p>
         <p className="mb-3">
           <strong className="text-foreground">Reporting:</strong> If a user
-          violates these guidelines, report them through the app. Reporting
-          automatically blocks the user and sends the report to our moderation
-          team for review. Please provide a clear description of what happened.
+          violates these guidelines, report them through the app. After
+          submitting a report, you&apos;ll be asked if you&apos;d also like to
+          block the user. The report is sent to our moderation team for review.
+          Please provide a clear description of what happened.
         </p>
         <p className="mb-3">
           You can also contact us directly at{" "}
