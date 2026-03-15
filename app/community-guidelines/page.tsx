@@ -373,6 +373,10 @@ export default function CommunityGuidelines() {
           .
         </p>
       </section>
+
+      <p className="text-muted text-[10px] italic text-center mt-6">
+        &ldquo;Let us consider how we may spur one another on toward love and good deeds, not giving up meeting together.&rdquo; &mdash; Hebrews 10:24-25
+      </p>
     </LegalLayout>
   );
 }

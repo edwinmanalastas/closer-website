@@ -450,6 +450,10 @@ export default function SafetyTips() {
           .
         </p>
       </section>
+
+      <p className="text-muted text-[10px] italic text-center mt-6">
+        &ldquo;Two are better than one; if either of them falls down, one can help the other up.&rdquo; &mdash; Ecclesiastes 4:9-10
+      </p>
     </LegalLayout>
   );
 }
