@@ -344,6 +344,13 @@ export default function PrivacyPolicy() {
           . We do not use any advertising networks, social media tracking
           pixels, or other third-party analytics beyond Firebase Analytics.
         </p>
+        <p className="mt-3">
+          Your data is stored on Firebase servers operated by Google, which may
+          be located in the United States or other countries outside of Canada.
+          By using the Service, you consent to the transfer and storage of your
+          data in these locations, subject to the safeguards described in
+          Google&apos;s Privacy Policy.
+        </p>
       </section>
 
       <section>
@@ -630,7 +637,35 @@ export default function PrivacyPolicy() {
 
       <section>
         <h2 className="text-xl font-semibold text-foreground mb-4">
-          13. Contact Us
+          13. Canadian Privacy Law
+        </h2>
+        <p>
+          We comply with Canada&apos;s Personal Information Protection and
+          Electronic Documents Act (PIPEDA). You have the right to access,
+          correct, or delete your personal information at any time. To exercise
+          these rights or file a privacy complaint, contact us at{" "}
+          <a
+            href="mailto:support@closerapp.app"
+            className="text-primary hover:underline"
+          >
+            support@closerapp.app
+          </a>
+          . You may also contact the{" "}
+          <a
+            href="https://www.priv.gc.ca"
+            className="text-primary hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Office of the Privacy Commissioner of Canada
+          </a>{" "}
+          if you believe your privacy rights have not been respected.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold text-foreground mb-4">
+          14. Contact Us
         </h2>
         <p className="mb-3">
           If you have any questions, concerns, or requests regarding this
