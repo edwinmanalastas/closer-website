@@ -47,9 +47,10 @@ export default function Footer() {
           <p className="text-muted text-xs">
             &copy; {new Date().getFullYear()} Closer. All rights reserved.
           </p>
-          <p className="text-muted text-[10px] italic mt-4">
-            &ldquo;As iron sharpens iron, so one person sharpens another.&rdquo; &mdash; Proverbs 27:17
-          </p>
+          <div className="text-muted text-[10px] italic mt-4">
+            <p>&ldquo;As iron sharpens iron, so one person sharpens another.&rdquo;</p>
+            <p className="mt-1">Proverbs 27:17</p>
+          </div>
         </div>
       </div>
     </footer>
