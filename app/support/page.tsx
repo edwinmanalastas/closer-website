@@ -167,6 +167,18 @@ export default function Support() {
               screen.
             </p>
           </div>
+          <div>
+            <h3 className="font-medium text-foreground mb-2">
+              What are nearby notifications?
+            </h3>
+            <p>
+              When someone goes live within about 1km of you, you may receive a
+              push notification with a playful message like &ldquo;someone just
+              went live near you.&rdquo; These are anonymous — you won&apos;t
+              know who went live. You can turn these off in Settings under
+              &ldquo;People Live Nearby.&rdquo;
+            </p>
+          </div>
         </div>
       </section>
 
@@ -246,7 +258,7 @@ export default function Support() {
               They&apos;ll see a full-screen animation with your username —
               it&apos;s a playful, low-pressure way to signal &ldquo;I see
               you!&rdquo; without shouting across the room. There&apos;s a
-              10-second cooldown between waves.
+              60-second cooldown between waves.
             </p>
           </div>
           <div>
@@ -496,6 +508,19 @@ export default function Support() {
             <p>
               Closer supports one active session per account. Signing in on a
               new device will sign you out of the previous one.
+            </p>
+          </div>
+          <div>
+            <h3 className="font-medium text-foreground mb-2">
+              How do I control my notifications?
+            </h3>
+            <p>
+              In Settings, you can toggle two types of notifications
+              independently: &ldquo;People Live Nearby&rdquo; for push
+              notifications when someone goes live near you, and
+              &ldquo;Messages&rdquo; for notifications about new messages,
+              reactions, and invites. You can also mute individual friends from
+              their chat info screen.
             </p>
           </div>
         </div>

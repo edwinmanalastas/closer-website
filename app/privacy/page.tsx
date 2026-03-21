@@ -423,8 +423,9 @@ export default function PrivacyPolicy() {
           </li>
           <li>
             <strong className="text-foreground">Last known location:</strong>{" "}
-            Retained for up to 24 hours for proximity notifications, then
-            automatically expired
+            Stored until overwritten by a newer location update. Locations older
+            than 24 hours are considered stale and are not used for proximity
+            notifications
           </li>
           <li>
             <strong className="text-foreground">Messages:</strong> Stored while
