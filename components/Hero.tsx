@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-16 items-center mt-4 lg:mt-0">
           {/* Mobile: Small phone mockup above text */}
           <div className="lg:hidden flex justify-center h-0 overflow-visible">
-            <div className="scale-[0.38] origin-center -mt-[240px]">
+            <div className="scale-[0.38] origin-center -mt-[240px]" style={{ filter: 'drop-shadow(0 15px 18px rgba(123, 91, 253, 0.6))' }}>
               <PhoneMockup>
                 <video
                   src="/videos/hero-map.mp4"
@@ -53,6 +53,7 @@ export default function Hero() {
 
           {/* Right: Phone mockup */}
           <ScrollReveal className="hidden lg:flex justify-center">
+            <div style={{ filter: 'drop-shadow(0 15px 18px rgba(123, 91, 253, 0.6))' }}>
             <PhoneMockup>
               <video
                 src="/videos/hero-map.mp4"
@@ -63,6 +64,7 @@ export default function Hero() {
                 className="w-full h-full object-cover"
               />
             </PhoneMockup>
+            </div>
           </ScrollReveal>
         </div>
       </div>
