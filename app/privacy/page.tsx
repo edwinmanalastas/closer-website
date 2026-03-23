@@ -519,20 +519,6 @@ export default function PrivacyPolicy() {
           <li>Sign you out of the Service</li>
         </ol>
         <p className="mt-3">
-          Your Firebase Authentication record (phone number) is retained
-          indefinitely after account deletion solely to allow re-registration
-          with the same phone number if you choose to return. If you wish to
-          have your authentication record fully removed, please contact us
-          at{" "}
-          <a
-            href="mailto:support@closerapp.app"
-            className="text-primary hover:underline"
-          >
-            support@closerapp.app
-          </a>
-          .
-        </p>
-        <p className="mt-3">
           Account deletion is permanent and cannot be undone. We aim to complete
           all data deletion within 30 days of your request, though most data is
           deleted immediately.
