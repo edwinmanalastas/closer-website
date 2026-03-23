@@ -155,6 +155,16 @@ export default function PrivacyPolicy() {
           — no email addresses, phone numbers, exact GPS coordinates, or raw
           user input. Only hashed user IDs are used for analytics purposes.
         </p>
+
+        <h3 className="font-medium text-foreground mt-6 mb-3">
+          2.6 Website
+        </h3>
+        <p>
+          Our website at closerapp.app does not use cookies, tracking pixels,
+          or third-party analytics. It is a static informational site with no
+          user tracking. Firebase Analytics is used only within the mobile
+          application.
+        </p>
       </section>
 
       <section>
@@ -170,50 +180,69 @@ export default function PrivacyPolicy() {
               Provide and operate the Service
             </strong>{" "}
             — create and maintain your account, display your profile to other
-            users, and enable core app features
+            users, and enable core app features (basis: contractual necessity)
           </li>
           <li>
             <strong className="text-foreground">Enable live sessions</strong> —
             show your location on the map to nearby users when you choose to go
             live, and facilitate in-person meetups through our pairing system
+            (basis: your consent)
           </li>
           <li>
             <strong className="text-foreground">Send notifications</strong> —
             deliver push notifications for messages, proximity alerts when
-            someone nearby goes live, and pairing updates
+            someone nearby goes live, and pairing updates (basis: your consent).
+            All notifications are functional and service-related. We do not
+            send marketing or promotional messages. If we introduce commercial
+            messages in the future, we will obtain your express consent in
+            compliance with Canada&apos;s Anti-Spam Legislation (CASL).
           </li>
           <li>
             <strong className="text-foreground">
               Facilitate messaging
             </strong>{" "}
             — enable 1:1 messaging between users who have met in person and
-            added each other as friends
+            added each other as friends (basis: contractual necessity)
           </li>
           <li>
             <strong className="text-foreground">
               Improve and optimize the Service
             </strong>{" "}
             — analyze anonymous usage patterns to identify issues, improve
-            features, and enhance the user experience
+            features, and enhance the user experience (basis: legitimate
+            interest)
           </li>
           <li>
             <strong className="text-foreground">Safety and moderation</strong> —
             investigate reports, enforce our Community Guidelines and Terms
-            and Conditions, and protect users from harmful behavior
+            and Conditions, and protect users from harmful behavior (basis:
+            legitimate interest)
           </li>
           <li>
             <strong className="text-foreground">
               Authenticate your identity
             </strong>{" "}
             — verify your phone number to prevent fake accounts and enable
-            secure sign-in
+            secure sign-in (basis: contractual necessity)
           </li>
           <li>
             <strong className="text-foreground">Comply with legal obligations</strong>{" "}
             — respond to lawful requests from authorities where required by
-            applicable law
+            applicable law (basis: legal obligation)
           </li>
         </ul>
+
+        <h3 className="font-medium text-foreground mt-6 mb-3">
+          Automated Decision-Making
+        </h3>
+        <p>
+          Closer uses proximity and mutual gender preferences to determine
+          which users are visible to each other on the map. This matching is
+          based on simple filters you control through your profile settings.
+          We do not use profiling, AI-based scoring, or automated
+          decision-making that produces legal or similarly significant effects
+          on users.
+        </p>
       </section>
 
       <section>
@@ -341,15 +370,36 @@ export default function PrivacyPolicy() {
           >
             Google&apos;s Privacy Policy
           </a>
+          . Sentry&apos;s data practices are governed by{" "}
+          <a
+            href="https://sentry.io/privacy/"
+            className="text-primary hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Sentry&apos;s Privacy Policy
+          </a>
+          . Expo&apos;s data practices are governed by{" "}
+          <a
+            href="https://expo.dev/privacy"
+            className="text-primary hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Expo&apos;s Privacy Policy
+          </a>
           . We do not use any advertising networks, social media tracking
           pixels, or other third-party analytics beyond Firebase Analytics.
         </p>
         <p className="mt-3">
           Your data is stored on Firebase servers operated by Google, which may
           be located in the United States or other countries outside of Canada.
-          By using the Service, you consent to the transfer and storage of your
-          data in these locations, subject to the safeguards described in
-          Google&apos;s Privacy Policy.
+          Google provides contractual data protection commitments for data
+          processed through Firebase. By using the Service, you consent to the
+          transfer and storage of your data in these locations. Please be aware
+          that data stored outside of Canada may be accessible to foreign
+          governments, courts, or law enforcement under the laws of those
+          jurisdictions.
         </p>
       </section>
 
@@ -469,10 +519,11 @@ export default function PrivacyPolicy() {
           <li>Sign you out of the Service</li>
         </ol>
         <p className="mt-3">
-          Your Firebase Authentication record (phone number) is retained solely
-          to allow re-registration with the same phone number if you choose to
-          return. If you wish to have your authentication record fully removed,
-          please contact us at{" "}
+          Your Firebase Authentication record (phone number) is retained
+          indefinitely after account deletion solely to allow re-registration
+          with the same phone number if you choose to return. If you wish to
+          have your authentication record fully removed, please contact us
+          at{" "}
           <a
             href="mailto:support@closerapp.app"
             className="text-primary hover:underline"
@@ -618,7 +669,44 @@ export default function PrivacyPolicy() {
 
       <section>
         <h2 className="text-xl font-semibold text-foreground mb-4">
-          12. Changes to This Privacy Policy
+          12. Data Breach Notification
+        </h2>
+        <p className="mb-3">
+          In the event of a data breach that poses a real risk of significant
+          harm to you, we will:
+        </p>
+        <ul className="list-disc list-inside space-y-1.5">
+          <li>
+            Notify affected users as soon as feasible, describing the nature
+            of the breach, the types of personal information involved, and
+            the steps we have taken to address it
+          </li>
+          <li>
+            Report the breach to the{" "}
+            <a
+              href="https://www.priv.gc.ca"
+              className="text-primary hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Office of the Privacy Commissioner of Canada
+            </a>{" "}
+            as required under PIPEDA
+          </li>
+          <li>
+            Provide recommendations for steps you can take to protect yourself
+          </li>
+        </ul>
+        <p className="mt-3">
+          We maintain records of all data breaches, regardless of whether they
+          meet the threshold for notification, as required by Canadian privacy
+          law.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-xl font-semibold text-foreground mb-4">
+          13. Changes to This Privacy Policy
         </h2>
         <p className="mb-3">
           We may update this Privacy Policy from time to time to reflect changes
@@ -638,13 +726,23 @@ export default function PrivacyPolicy() {
 
       <section>
         <h2 className="text-xl font-semibold text-foreground mb-4">
-          13. Canadian Privacy Law
+          14. Canadian Privacy Law
         </h2>
-        <p>
+        <p className="mb-3">
           We comply with Canada&apos;s Personal Information Protection and
-          Electronic Documents Act (PIPEDA). You have the right to access,
-          correct, or delete your personal information at any time. To exercise
-          these rights or file a privacy complaint, contact us at{" "}
+          Electronic Documents Act (PIPEDA) and applicable provincial privacy
+          legislation, including Alberta&apos;s Personal Information Protection
+          Act (PIPA). Where provincial privacy laws apply, we comply with the
+          requirements of those laws in addition to PIPEDA.
+        </p>
+        <p className="mb-3">
+          Under these laws, you have the right to access, correct, or delete
+          your personal information at any time. We obtain meaningful consent
+          before collecting, using, or disclosing your personal information,
+          and we collect only the information necessary to provide the Service.
+        </p>
+        <p>
+          To exercise your privacy rights or file a complaint, contact us at{" "}
           <a
             href="mailto:support@closerapp.app"
             className="text-primary hover:underline"
@@ -660,25 +758,32 @@ export default function PrivacyPolicy() {
           >
             Office of the Privacy Commissioner of Canada
           </a>{" "}
-          if you believe your privacy rights have not been respected.
+          or your provincial privacy commissioner if you believe your privacy
+          rights have not been respected.
         </p>
       </section>
 
       <section>
         <h2 className="text-xl font-semibold text-foreground mb-4">
-          14. Contact Us
+          15. Contact Us
         </h2>
         <p className="mb-3">
           If you have any questions, concerns, or requests regarding this
-          Privacy Policy or our data practices, please contact us at:
+          Privacy Policy or our data practices, please contact our Privacy
+          Officer at:
         </p>
-        <p>
+        <p className="mb-3">
           <a
             href="mailto:support@closerapp.app"
             className="text-primary hover:underline"
           >
             support@closerapp.app
           </a>
+        </p>
+        <p>
+          Our Privacy Officer is responsible for overseeing compliance with
+          this Privacy Policy and applicable privacy legislation. We will
+          acknowledge receipt of your inquiry and respond within 30 days.
         </p>
       </section>
     </LegalLayout>
