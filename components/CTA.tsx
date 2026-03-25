@@ -1,5 +1,6 @@
 import ScrollReveal from "./ScrollReveal";
 import AppStoreBadge from "./AppStoreBadge";
+import GooglePlayBadge from "./GooglePlayBadge";
 
 export default function CTA() {
   return (
@@ -20,7 +21,10 @@ export default function CTA() {
               <p className="text-muted text-lg mb-10 max-w-lg mx-auto">
                 Download Closer and start making real friends on campus.
               </p>
-              <AppStoreBadge className="justify-center" />
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <AppStoreBadge />
+                <GooglePlayBadge />
+              </div>
               <p className="text-muted/50 text-sm mt-10">
                 Built by a student, for students.
               </p>

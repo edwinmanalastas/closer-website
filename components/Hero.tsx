@@ -1,6 +1,7 @@
 import PhoneMockup from "./PhoneMockup";
 import ScrollReveal from "./ScrollReveal";
 import AppStoreBadge from "./AppStoreBadge";
+import GooglePlayBadge from "./GooglePlayBadge";
 
 export default function Hero() {
   return (
@@ -39,8 +40,9 @@ export default function Hero() {
                 Like Pokemon GO for making friends on campus. Go live, get
                 paired with someone nearby, and meet in minutes — not days.
               </p>
-              <div className="flex flex-wrap items-center gap-4">
+              <div className="flex flex-wrap items-center gap-3">
                 <AppStoreBadge />
+                <GooglePlayBadge />
                 <a
                   href="#how-it-works"
                   className="inline-flex items-center gap-2 px-7 py-3.5 border border-border text-foreground hover:bg-black/5 font-medium rounded-full transition-colors"
