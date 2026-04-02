@@ -118,10 +118,10 @@ export default function PrivacyPolicy() {
           When you go live, your location is saved as your &ldquo;last known
           location.&rdquo; This is used to notify nearby offline users that
           someone has gone live within 1km of where they last went live. This
-          saved location is retained for up to 24 hours. You will not receive
-          repeated notifications from the same user within 1 hour.
-          Notifications are based on where you last went live, not your
-          current location.
+          saved location is retained for up to 24 hours. Proximity
+          notifications are capped at 3 every 3 hours, and this counter
+          resets when you open the app. Notifications are based on where
+          you last went live, not your current location.
         </p>
 
         <h3 className="font-medium text-foreground mt-6 mb-3">
@@ -628,8 +628,20 @@ export default function PrivacyPolicy() {
             prevent location spoofing.
           </li>
           <li>
-            <strong className="text-foreground">Message rate limiting:</strong>{" "}
+            <strong className="text-foreground">Rate limiting &amp; abuse prevention:</strong>{" "}
             Server-side rate limits prevent spam and abuse in messaging.
+            Photo uploads are limited to 5MB per file and restricted to
+            image formats only. Additional cooldowns are applied to
+            reactions and profile updates to prevent automated abuse.
+          </li>
+          <li>
+            <strong className="text-foreground">
+              Automated content screening:
+            </strong>{" "}
+            Profile content such as status text is automatically screened
+            for prohibited content including slurs and
+            identity-revealing information (e.g., your first name) to
+            protect your anonymity from nearby strangers.
           </li>
           <li>
             <strong className="text-foreground">
