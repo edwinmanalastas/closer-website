@@ -125,8 +125,7 @@ export default function SafetyTips() {
           2. Before Going Live
         </h2>
         <p className="mb-3">
-          These tips are shown in the app before your first live session. We
-          encourage you to keep them in mind every time you go live:
+          These tips are shown in the app before every live session:
         </p>
         <ul className="list-disc list-inside space-y-3">
           <li>
