@@ -45,7 +45,10 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-muted text-xs">
-            &copy; {new Date().getFullYear()} Closer. All rights reserved.
+            &copy; {new Date().getFullYear()} Closer Labs Inc. All rights reserved.
+          </p>
+          <p className="text-muted text-xs mt-1">
+            Closer Labs Inc. is a Canadian federal corporation (CBCA) registered in Alberta.
           </p>
           <div className="text-muted text-[10px] italic mt-4">
             <p>&ldquo;As iron sharpens iron, so one person sharpens another.&rdquo;</p>

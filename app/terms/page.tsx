@@ -7,15 +7,16 @@ export const metadata = {
 
 export default function TermsAndConditions() {
   return (
-    <LegalLayout title="Terms and Conditions" lastUpdated="March 2026">
+    <LegalLayout title="Terms and Conditions" lastUpdated="May 2026">
       <section>
         <h2 className="text-xl font-semibold text-foreground mb-4">
           1. Introduction
         </h2>
         <p className="mb-3">
-          Welcome to Closer. Closer (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or
-          &ldquo;our&rdquo;) provides a mobile application and website located
-          at{" "}
+          Welcome to Closer. Closer Labs Inc. (&ldquo;Closer,&rdquo;
+          &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), a Canadian
+          federal corporation (CBCA) with its registered office in Alberta,
+          Canada, provides a mobile application and website located at{" "}
           <a
             href="https://closerapp.app"
             className="text-primary hover:underline"

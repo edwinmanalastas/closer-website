@@ -12,10 +12,14 @@ export default function Support() {
         <h2 className="text-xl font-semibold text-foreground mb-4">
           Need Help?
         </h2>
-        <p>
+        <p className="mb-3">
           Whether you have a question about how Closer works, need help with
           your account, or want to report a concern — you&apos;re in the right
           place. Browse the questions below, or reach out to us directly.
+        </p>
+        <p className="text-sm text-muted">
+          Closer is operated by Closer Labs Inc., a Canadian federal
+          corporation (CBCA) with its registered office in Alberta, Canada.
         </p>
       </section>
 
